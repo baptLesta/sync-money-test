@@ -19,18 +19,20 @@ after((done) => {
 });
 
 describe('## Data APIs', () => {
-  const data = {
-    value: 'sync is cool'
+  const dataInfo = {
+    data: {
+      value: 'sync'
+    }
   };
 
   describe('# POST /api/data', () => {
     it('should create a new data', (done) => {
       request(app)
         .post('/api/data')
-        .send(data)
+        .send(dataInfo)
         .expect(httpStatus.CREATED)
         .then((res) => {
-          expect(res.body.data.value).to.equal(data.value);
+          expect(res.body.data.value.length).to.equal(344);
           done();
         })
         .catch(done);
