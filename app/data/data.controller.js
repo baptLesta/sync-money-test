@@ -3,8 +3,8 @@ const { to, sendError, sendSuccess } = require('../services/util.service');
 const httpStatus = require('http-status');
 
 /**
- * Create new movie
- * @property {string} req.body.value - The value of the data.
+ * Create new data
+ * @property {string} req.body.value - The value of the data
  * @returns {Data}
  */
 async function create(req, res) {

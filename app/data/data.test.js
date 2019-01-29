@@ -20,7 +20,7 @@ after((done) => {
 
 describe('## Data APIs', () => {
   const data = {
-    value: 'sync.money is cool :)'
+    value: 'sync is cool'
   };
 
   describe('# POST /api/data', () => {
