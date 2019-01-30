@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 /**
- * User Schema
+ * Data Schema
  */
 const DataSchema = new mongoose.Schema({
   value: {
