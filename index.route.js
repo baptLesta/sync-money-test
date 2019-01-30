@@ -13,7 +13,7 @@ router.get('/health-check', (req, res) =>
 // mount user routes at /data
 router.use('/data', dataRoutes);
 
-router.use((req, res) => {
+router.use((req, res) => { // eslint-disable-line
   if (!req.route) return sendError(res, 'The path of the url match no routes', httpStatus.NOT_FOUND);
 });
 
